@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  stoiq:
+    build: .
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./quotes.json:/stoiq/quotes.json
+      - ./css:/stoiq/css
+      - ./html:/stoiq/html
+      - ./js:/stoiq/js
+    environment:
+      - NODE_ENV=production
+    restart: unless-stopped
