@@ -10,6 +10,4 @@ services:
       - ./css:/stoiq/css
       - ./html:/stoiq/html
       - ./js:/stoiq/js
-    environment:
-      - NODE_ENV=production
     restart: unless-stopped
