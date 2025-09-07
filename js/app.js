@@ -37,7 +37,7 @@ async function loadNewQuote() {
         document.getElementById('authorText').querySelector('cite').textContent = '';
         
         // Type out the quote with typing effect
-        await typeText(document.getElementById('quoteText'), data.quote, 30);
+        await typeText(document.getElementById('quoteText'), data.quote, 50);
         
         // Small delay before typing the author
         await new Promise(resolve => setTimeout(resolve, 500));
